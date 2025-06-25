@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  service_1:
+    build: ./service_1
+    container_name: golang_service
+    ports:
+      - "8001:8001"
+    networks:
+      - bridge_network
+    restart: unless-stopped
+
+  service_2:
+    build: ./service_2
+    container_name: python_service
+    ports:
+      - "8002:8002"
+    networks:
+      - bridge_network
+    restart: unless-stopped
+
+  nginx:
+    build: ./nginx
+    container_name: nginx_proxy
+    ports:
+      - "8080:80"
+    depends_on:
+      - service_1
+      - service_2
+    networks:
+      - bridge_network
+    restart: unless-stopped
+
+networks:
+  bridge_network:
+    driver: bridge
