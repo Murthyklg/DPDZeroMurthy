@@ -78,18 +78,12 @@ After starting the services, test the setup:
 curl http://localhost:8080/
 
 # Test golang service through nginx
-curl http://localhost:8080/go/
+curl http://localhost:8080/go/ping
+curl http://localhost:8080/go/hello
 
 # Test python service through nginx  
-curl http://localhost:8080/py/
-
-# Test health endpoints
-curl http://localhost:8080/go/health
-curl http://localhost:8080/py/health
-
-# Test python data endpoint
-curl http://localhost:8080/py/data
-```
+curl http://localhost:8080/py/ping
+curl http://localhost:8080/py/hello
 
 ## Development
 
