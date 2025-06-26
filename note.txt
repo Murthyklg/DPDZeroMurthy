@@ -1,0 +1,13 @@
+Hi, I am Murthy from Bangalore. 
+This is a small introduction about me.
+I am a Cloud and Devops Enthusiast learning and upgrading myself everyday.
+Previosly I worked as a senior analyst at HCLTech.
+My role was to develop and maintain AWS automation scripts using terraform as IaC. 
+I have some experience developing terraform scripts for AWS.
+
+
+Note: This is the first time that I have recored myself. So, I hope this video to be fine.
+
+If everything goes well and my work gets selected, lets catchup in our 1st round interview with the team member. 
+
+Thank you
